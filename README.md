@@ -1,4 +1,3 @@
-```md
 # Art Institute Artwork Table
 
 A React + TypeScript application built with **Vite** that displays artwork data from the Art Institute of Chicago API.  
@@ -73,7 +72,7 @@ npm run build
 
 ---
 
-##Deployment Guide (Netlify)
+## Deployment Guide (Netlify)
 
 1. Build the project:
    ```bash
@@ -88,7 +87,7 @@ npm run build
 
 ---
 
-##Live Demo
+## Live Demo
 
 Add your **Netlify/Cloudflare deployment link** here.
 
@@ -100,7 +99,7 @@ Add your **GitHub repository link** here.
 
 ---
 
-##Notes
+## Notes
 
 - Data is fetched **page by page** using server-side pagination  
 - Only **current page data** is stored in state  
@@ -114,7 +113,7 @@ Add your **GitHub repository link** here.
 ##Author
 
 **Neha Pal**
-```
+
 
 👉 Just paste this into your repo as `README.md`, then replace the placeholders (`<your-github-repo-link>` and Netlify link). That’s it — submission‑ready.  
 
