@@ -1,73 +1,100 @@
-# React + TypeScript + Vite
+```md
+# Art Institute Artwork Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React and TypeScript application built using Vite.  
+It displays artwork data from the Art Institute of Chicago API in a table with server-side pagination and persistent row selection.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Server-side pagination using API
+- PrimeReact DataTable integration
+- Multiple row selection using checkboxes
+- Selection persists when navigating between pages
+- Select and deselect all rows on the current page
+- Custom selection of N rows from the current page
+- Clean and responsive UI
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- PrimeReact
+- Art Institute of Chicago API
 
-## Expanding the ESLint configuration
+## API Used
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+https://api.artic.edu/api/v1/artworks?page=1
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Project Setup
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+Clone the repository:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+git clone <your-github-repo-link>
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
+
+Go to project folder:
+
+```
+
+cd <project-folder>
+
+```
+
+Install dependencies:
+
+```
+
+npm install
+
+```
+
+Run the development server:
+
+```
+
+npm run dev
+
+```
+
+Open in browser:
+
+http://localhost:5173
+
+## Build for Production
+
+```
+
+npm run build
+
+```
+
+## Live Demo
+
+Add your Netlify deployment link here
+
+## Repository
+
+Add your GitHub repository link here
+
+## Notes
+
+- Data is fetched page by page using server-side pagination
+- Only current page data is stored
+- Selection is maintained using row keys
+- No bulk prefetching of other pages
+- Custom selection is limited to current page rows
+
+## Author
+
+Neha Pal
+```
+
+* write a short submission message for recruiter
+* give interview explanation of your selection logic
+* help with Netlify deploy steps if stuck
+
+Just tell me.
