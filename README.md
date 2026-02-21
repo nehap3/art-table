@@ -113,8 +113,3 @@ Add your **GitHub repository link** here.
 ##Author
 
 **Neha Pal**
-
-
-👉 Just paste this into your repo as `README.md`, then replace the placeholders (`<your-github-repo-link>` and Netlify link). That’s it — submission‑ready.  
-
-Do you want me to also give you a **sample Netlify badge** (like “Deploy Status”) so your README looks even more professional?
