@@ -8,7 +8,7 @@ function App() {
   const [page, setPage] = useState(1);
   const [totalRecords, setTotalRecords] = useState(0);
 
-  // PrimeReact selection
+  
   const [selectedRows, setSelectedRows] = useState<Artwork[]>([]);
   const [customCount, setCustomCount] = useState("");
 
@@ -30,7 +30,7 @@ function App() {
     fetchArtworks(page);
   }, [page]);
 
-  // select all current page
+  
   const selectAllCurrentPage = () => {
     setSelectedRows((prev) => {
       const map = new Map(prev.map((item) => [item.id, item]));
@@ -39,12 +39,12 @@ function App() {
     });
   };
 
-  // deselect all current page
+  
   const deselectAllCurrentPage = () => {
     setSelectedRows((prev) => prev.filter((row) => !artworks.find(a => a.id === row.id)));
   };
 
-  // custom N selection
+ 
   const handleCustomSelect = () => {
     const count = parseInt(customCount);
     if (!count || count <= 0) return;
@@ -64,7 +64,7 @@ function App() {
 
       <p>Selected: {selectedRows.length} rows</p>
 
-      {/* select buttons */}
+      
       <div style={{ marginBottom: "10px" }}>
         <button onClick={selectAllCurrentPage}>Select All</button>
         <button onClick={deselectAllCurrentPage} style={{ marginLeft: "10px" }}>
@@ -72,7 +72,7 @@ function App() {
         </button>
       </div>
 
-      {/* custom selection */}
+     
       <div style={{ marginBottom: "10px" }}>
         <input
           type="number"
