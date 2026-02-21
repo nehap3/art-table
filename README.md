@@ -89,13 +89,13 @@ npm run build
 
 ## Live Demo
 
-Add your **Netlify/Cloudflare deployment link** here.
+**https://art-table-typescript.netlify.app/**
 
 ---
 
 ## Repository
 
-Add your **GitHub repository link** here.
+**https://github.com/nehap3/art-table**
 
 ---
 
